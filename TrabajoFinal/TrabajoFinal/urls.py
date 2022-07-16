@@ -18,7 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     # Paths del core
-    #path('', include('core.urls')),
+    path('', include('core.urls')),
     # Paths de services
     path('servicios/', include('servicios.urls')),
     # Paths de blog
