@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio de sesion{% endblock %}
+
+{% block content %}
+
+<hr>
+<h2>Inicio de sesion</h2>
+
+<form action="" method="POST"> {%csrf_token%}
+       
+    {{form.as_p}}
+    
+    <button type="submit"> Iniciar Sesión</button>
+    <button><a href="registro">Registrarse</a></button>
+
+    <h3>{{mensaje}}</h3>
+
+</div>
+
+{% endblock %}

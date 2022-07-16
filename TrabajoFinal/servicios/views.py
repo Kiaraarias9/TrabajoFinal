@@ -13,7 +13,7 @@ def agregarServicios(request):
             informacion = miformulario.cleaned_data
             miformulario.save()
             data['mensaje'] = "Datos Resgistrados"
-            return render(request, '/servicios.html')
+            return render(request, 'servicios/servicios.html')
     else:
         miformulario= Servicios()
     return render(request, '', data)

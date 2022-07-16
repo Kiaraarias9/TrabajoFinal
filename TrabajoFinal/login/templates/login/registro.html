@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+
+<hr>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <hr>
+
+    <form action="" method="POST">
+
+        {% csrf_token %}
+
+        {{form.as_p}}
+
+        <button type="submit">Registrar</button>
+    </form>
+
+</body>
+
+{% endblock %}
